@@ -5,4 +5,10 @@
 <p>Poke Type: <%= @pokemon.poke_type %></p>
 </div>
 
-<a href='/pokemons/<%= @pokemon.id %>/edit'>Edit This Pokemon</a>
+<a href='/pokemons/<%= @pokemon.id %>/edit'>Edit this pokemon</a>
+
+
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>

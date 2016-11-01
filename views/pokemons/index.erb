@@ -1,5 +1,7 @@
 <h2>All Pokemons</h2>
-<p><a href="/pokemons/new">New</a></p>
+<div class="pokemon">
+<p><a href="/pokemons/new">New Pokemon</a></p>
 <% @pokemons.each do |pokemon|%>
   <p><a href="/pokemons/<%= pokemon.id %>"><%= pokemon.name %></a></p>
 <% end %>
+</div>

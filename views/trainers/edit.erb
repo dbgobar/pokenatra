@@ -1,0 +1,8 @@
+
+<form action="/trainers/<%= @trainer.id %>" method ="post">
+  <input type ="hidden" name="_method" value="put">
+  <input type="text" name = "trainer[name]" value = '<%= @trainer.name%>'>
+  <input type="text" name = "trainer[level]" value="<%= @trainer.level%>" >
+  <input tyep="text" name = "trainer[team_id]" value="<%= @trainer.team_id%>">
+  <input type ="submit" value="update">
+</form>

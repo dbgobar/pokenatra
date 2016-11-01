@@ -13,6 +13,7 @@ get '/trainers' do
 end
 
 get '/pokemons' do
+  @trainers = Trainer.all
   @pokemons = Pokemon.all
   erb :"pokemons/index"
 end
